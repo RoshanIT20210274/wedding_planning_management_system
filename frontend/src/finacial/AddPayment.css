@@ -1,0 +1,70 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+.sup-title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: -30px;
+  
+}
+ 
+.spcsname {
+  float: left;
+  width: 15%;
+  margin-left: 355px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+ 
+.spcsans {
+  float: right;
+  width: 600px;
+  margin-top: -70px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+ 
+input {
+  width: 400px;
+  height: 25px;
+}
+ 
+/* Clear floats after the columns */
+.sprow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+.spcontainer {
+  border-radius: 10px;
+  background-color: #d7f4ff;
+  padding: 15px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 6rem;
+  margin: center;
+}
+ 
+.spmain-contain {
+  background: #5696fc;
+  height: 100vh;
+  display: flex;
+  background-image: linear-gradient(to bottom right, #073b8d, #62d8f2);
+}
+ 
+/* * {
+  box-sizing: border-box;
+} */
+ 
+/* 
+.container.row.cans {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  padding-left: 0;
+} */
+ 
+/* Button {
+  width: 10%;
+  margin-right: 10rem;
+} */
