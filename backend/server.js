@@ -30,7 +30,19 @@ const connection = mongoose.connection;
 connection.once("open", () => {
   console.log("mongodb Connection success");
 });
+
+const paymentRouter = require("./routes/addPayment");
+app.use("/payment",paymentRouter);
+
+const getpaymentRouter = require("./routes/getPayment");
+app.use("/payment",getpaymentRouter);
+
+const removepaymentRouter = require("./routes/removePayment");
+app.use("/payment",removepaymentRouter);
+
 //running port 8970
 app.listen(PORT, () => {
   console.log(`Server is up and running on port no: ${PORT}`);
+
+
 });

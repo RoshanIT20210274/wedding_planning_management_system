@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.view-emp-background {
+  background: #5696fc;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #073b8d, #62d8f2);
+}
+
+.view-emp-card {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 95%;
+  border-radius: 20px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+
+.back-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.view-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #1049d1;
+  padding: 10px;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  padding-right: 10px;
+}
