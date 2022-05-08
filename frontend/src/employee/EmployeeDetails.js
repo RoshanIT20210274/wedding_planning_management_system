@@ -242,7 +242,7 @@ export default function EmployeeDetails() {
               }}
               onClick={handleDownloadPdf}
             >
-              <VscFilePdf size={24} /> &nbsp; Download PDF
+              <VscFilePdf size={24} /> &nbsp; Generate Report
             </div>
           </div>
 

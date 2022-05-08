@@ -4,7 +4,6 @@ import TextField from "@material-ui/core/TextField";
 import { Grid } from "@material-ui/core";
 
 import Button from "@material-ui/core/Button";
-// import arrow from "../assets/images/back.jpg";
 
 import { useHistory } from "react-router-dom";
 import * as yup from "yup";
@@ -20,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     marginLeft: 400,
     marginRight: 400,
+    marginBottom: 400,
+    marginTop: 200,
     borderRadius: 15,
     padding: 20,
   },
@@ -36,7 +37,6 @@ const validationSchema = yup.object().shape({
 
 export default function Request() {
   const history = useHistory();
-  const today = new Date().toLocaleDateString();
 
   const formik = useFormik({
     initialValues: {
@@ -158,11 +158,7 @@ export default function Request() {
           top: 0,
           left: 0,
         }}
-      >
-        {/* <a href="http://localhost:3000/admin-dashboard">
-          <img src={arrow} height={70} alt={"arrow"} />
-        </a> */}
-      </div>
+      ></div>
       <form className={classes.root} noValidate autoComplete="off">
         <Grid container spacing={1}>
           <Grid item xs={12}>

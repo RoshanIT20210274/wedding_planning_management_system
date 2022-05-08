@@ -52,7 +52,7 @@ app.use("/request", getrequestRouter);
 const removerequestRouter = require("./routes/removeRequest");
 app.use("/request", removerequestRouter);
 
-//running port 8970
+//running port 8070
 app.listen(PORT, () => {
   console.log(`Server is up and running on port no: ${PORT}`);
 });

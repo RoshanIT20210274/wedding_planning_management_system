@@ -12,6 +12,7 @@ import Login from "./employee/Login";
 import Dash from "./employee/Dash";
 import Request from "./employee/Request";
 import RequestDetails from "./employee/RequestDetails";
+import Profile from "./employee/Profile";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -40,6 +41,9 @@ ReactDOM.render(
         </Route>
         <Route exact path={"/request"}>
           <Request />
+        </Route>
+        <Route exact path={"/profile"}>
+          <Profile />
         </Route>
       </Switch>
     </BrowserRouter>
