@@ -43,7 +43,7 @@ export default function Login() {
       password,
     };
     try {
-      const endpoint = "http://localhost:8070/login";
+      const endpoint = "http://localhost:8070/employee/login";
       const body = JSON.stringify(formValues);
       const response = await fetch(endpoint, {
         method: "POST",
