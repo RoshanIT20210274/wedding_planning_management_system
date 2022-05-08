@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.Details-background {
+  background: #5696fc;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #073b8d, #62d8f2);
+}
+
+.Details-card {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 50%;
+  border-radius: 20px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #1049d1;
+  padding: 10px;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+}
+
+.dform1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+.dform-group1 {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+
+.dform-group1 .dform-control1 {
+  border: 1px solid #5696fc;
+  border-radius: 5px;
+  width: 75%;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: #494949;
+  font-weight: 500;
+  margin-bottom: 15px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.Details-card .dform-group1 .dform-control1 {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  padding-left: 0;
+}

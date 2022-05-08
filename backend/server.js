@@ -31,23 +31,41 @@ connection.once("open", () => {
   console.log("mongodb Connection success");
 });
 
+const employeeRouter = require("./routes/addEmployees");
+app.use("/employee", employeeRouter);
+
+const getemployeeRouter = require("./routes/getEmployees");
+app.use("/employee", getemployeeRouter);
+
+const removeemployeeRouter = require("./routes/removeEmployee");
+app.use("/employee", removeemployeeRouter);
+
+const authenticationRouter = require("./routes/authentication");
+app.use("/employee", authenticationRouter);
+
+const requestRouter = require("./routes/addRequests");
+app.use("/request", requestRouter);
+
+const getrequestRouter = require("./routes/getRequests");
+app.use("/request", getrequestRouter);
+
+const removerequestRouter = require("./routes/removeRequest");
+app.use("/request", removerequestRouter);
+
+//running port 8070
 const paymentRouter = require("./routes/addPayment");
-app.use("/payment",paymentRouter);
+app.use("/payment", paymentRouter);
 
 const getpaymentRouter = require("./routes/getPayment");
-app.use("/payment",getpaymentRouter);
+app.use("/payment", getpaymentRouter);
 
 const removepaymentRouter = require("./routes/removePayment");
-app.use("/payment",removepaymentRouter);
+app.use("/payment", removepaymentRouter);
 
 const salaryRouter = require("./routes/addSalary");
-app.use("/salary",salaryRouter);
-
-
+app.use("/salary", salaryRouter);
 
 //running port 8970
 app.listen(PORT, () => {
   console.log(`Server is up and running on port no: ${PORT}`);
-
-
 });

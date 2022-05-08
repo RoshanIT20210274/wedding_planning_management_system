@@ -4,6 +4,7 @@ const app = express();
 app.get("/", async (request, response) => {
   try {
     response.send({
+      message: "Wedding Planner API is online",
       message: "Wedding Planning",
     });
   } catch (error) {

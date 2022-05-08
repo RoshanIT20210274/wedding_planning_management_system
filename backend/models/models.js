@@ -1,7 +1,11 @@
+const Employee = require("./employeeSchema");
+const Request = require("./requestSchema");
 const Payment = require("./paymentSchema.js");
 const Salary = require("./salarySchema.js");
 
-module.exports ={
-    Payment,
-    Salary
+module.exports = {
+  Employee,
+  Request,
+  Payment,
+  Salary,
 };
