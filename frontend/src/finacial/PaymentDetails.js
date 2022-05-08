@@ -306,7 +306,10 @@ return val;
                         <Button
                           variant="contained"
                           color="primary"
-                          onClick={() => handleUpdatePress(row.customerName)}
+                          onClick={() => {
+                            handleUpdatePress(row.customerName)
+                      
+                          }}
                           startIcon={<CreateIcon />}
                         >
                           Update

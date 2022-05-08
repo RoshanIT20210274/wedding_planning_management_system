@@ -4,6 +4,7 @@ import NavBar from "./Components/NavBar";
 import AddPayment from "./AddPayment";
 import PaymentDetails from "./PaymentDetails";
 import UpdatePayment from "./UpdatePayment";
+import AddSalary from "./AddSalary";
 function dash() {
     return (
       <div>
@@ -13,6 +14,7 @@ function dash() {
             <Route path="/addpayment" exact component={AddPayment} />
             <Route path="/paymentdetails" component={PaymentDetails} />
             <Route path="/updatepayment" component={UpdatePayment} />
+            <Route path="/AddSalary" component={AddSalary} />
           </Switch>
         </Router>
       </div>

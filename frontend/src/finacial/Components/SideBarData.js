@@ -22,4 +22,11 @@ export const SidebarData = [
         icon: <AiIcons.AiOutlineUserAdd />,
         cName: "nav-text",
     },
+
+    {
+        title: "Add Salary Details",
+        path: "/addsalary",
+        icon: <AiIcons.AiOutlineUserAdd />,
+        cName: "nav-text",
+    },
     ];

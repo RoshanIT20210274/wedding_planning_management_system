@@ -57,7 +57,7 @@ router.get("/find/customerName", (req, res) => {
   paymentMap.push(payment);
   });
   
-  res.send(paymentMap);
+  res.send(JSON.stringify(paymentMap));
   });
   } catch (error) {
   res.status(500).send(JSON.stringify({ message: error.message }));

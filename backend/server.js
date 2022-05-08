@@ -40,6 +40,11 @@ app.use("/payment",getpaymentRouter);
 const removepaymentRouter = require("./routes/removePayment");
 app.use("/payment",removepaymentRouter);
 
+const salaryRouter = require("./routes/addSalary");
+app.use("/salary",salaryRouter);
+
+
+
 //running port 8970
 app.listen(PORT, () => {
   console.log(`Server is up and running on port no: ${PORT}`);

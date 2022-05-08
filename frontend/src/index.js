@@ -9,6 +9,8 @@ import AddPayment from './finacial/AddPayment';
 import PaymentDetails from './finacial/PaymentDetails';
 import UpdatePayment from './finacial/UpdatePayment';
 import Dash from './finacial/Dash';
+import AddSalary from './finacial/AddSalary';
+
 
 
 
@@ -36,6 +38,13 @@ ReactDOM.render(
        < UpdatePayment/>
       </Route>
     </Switch>
+    <Switch>
+      <Route exact path = {"/addsalary"}>
+       < AddSalary/>
+      </Route>
+    </Switch>
+    
+  
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
