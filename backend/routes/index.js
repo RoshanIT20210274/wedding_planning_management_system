@@ -6,6 +6,9 @@ const requests = require("./getRequests");
 const addRequest = require("./addRequests");
 const removeRequest = require("./removeRequest");
 const auth = require("./authentication");
+const addPayment = require("./addPayment");
+const payments = require("./getPayment");
+const addSalary = require("./addSalary");
 
 module.exports = [
   API_test,
@@ -16,4 +19,8 @@ module.exports = [
   requests,
   addRequest,
   removeRequest,
+  API_test,
+  addPayment,
+  payments,
+  addSalary,
 ];
