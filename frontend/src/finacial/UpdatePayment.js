@@ -42,19 +42,20 @@ export default function UpdatePayment() {
   const { targetCustomername } = location.state;
 
   useEffect(() => {
+    console.log(targetCustomername)
     const loadPayment = async () => {
       try {
         const endpoint = `http://localhost:8070/payment/find/customerName?customerName=${targetCustomername}`;
 
         const response = await fetch(endpoint, {
           method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
+          
         });
 
         if (response.status === 200) {
+          
           const responseBody = await response.json();
+          console.log(responseBody[0])
           setFormValues({
             customerName: targetCustomername,
             contactNumber: responseBody[0].contactNumber,
@@ -67,6 +68,7 @@ export default function UpdatePayment() {
             amountReceived: responseBody[0].amountReceived,
             amountDue: responseBody[0].amountDue,
           });
+         
 
           console.log(formValues)
         }
@@ -185,7 +187,7 @@ export default function UpdatePayment() {
       </Grid>
       <Grid item xs={6}>
         <TextField
-          style={{ width: "100%", paddingRight: 300 }}
+          style={{ width: "100%"}}
           id="standard-basic"
           label={fieldName}
           name={name}
@@ -238,6 +240,7 @@ export default function UpdatePayment() {
             </div>
           </Grid>
           {requiredFields.map((item, key) => {
+            console.log(formValues[item.type])
             return GridItem({
               fieldName: item.label,
               name: item.type,
